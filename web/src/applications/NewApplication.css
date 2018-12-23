@@ -1,0 +1,8 @@
+.NewApplication form {
+  padding-bottom: 15px;
+}
+
+.NewApplication form textarea {
+  height: 150px;
+  font-size: 16px;
+}

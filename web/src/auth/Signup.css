@@ -1,0 +1,43 @@
+@media all and (mind-width: 480px) {
+  .Signup {
+    padding: 60px 0;
+  }
+
+  .Signup form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}
+.Signup{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Signup form span.help-bloc {
+  /* font-size: 14px; */
+  padding-bottom: 10px;
+  color: #999;
+}
+
+.card-body{
+  background-color: transparent;
+  padding: 10px;
+}
+
+
+.card {
+  margin-top: 60px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px 0 rgba(245, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* border: 0.5px #ff5252 solid; */
+}

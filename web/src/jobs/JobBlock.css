@@ -1,0 +1,61 @@
+.JobBlock {
+  margin: 0 auto;
+}
+
+.JobBlock {
+  text-align: center;
+  list-style-position: inside;
+  border: 3px solid #fd6360;
+  padding-bottom: 25px;
+  /* margin-top: 10px; */
+}
+.JobBlock div p {
+  font-size: 14px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+.JobBlock div h1 {
+  font-size: 22px;
+}
+.JobBlock .container-fluid  {
+  text-align: center;
+  margin: 0 auto;
+}
+.JobBlock .fluid {
+  padding-top: 0px;
+}
+
+ul {
+  list-style-type: none
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card-body{
+  background-color: white;
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px 0 rgba(245, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* border: 0.5px #ff5252 solid; */
+}
+

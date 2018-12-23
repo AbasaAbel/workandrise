@@ -1,0 +1,126 @@
+.App {
+  margin-top: 15px;
+}
+
+.App .navbar {
+  background-color: #ff5252;
+  text-decoration-color: white;
+}
+
+.App .navbar .active {
+  background-color: black;
+  text-decoration-color: white;
+}
+
+.App .navbar-header .navbar-brand {
+  color: white
+}
+
+.App .navbar-header span.icon-bar {
+  color: white;
+  /* background-color: #fd6360; */
+  background-color: white
+}
+
+.App .hover  {
+  color: #fdd835;
+  background-color: #fdd835;
+}
+
+ul.nav.navbar-nav.navbar-right li a {
+  color: white
+}
+
+
+button.navbar-toggle.collapsed:hover {
+  background-color: #fdd835
+}
+
+.navbar-default .navbar-toggle:focus {
+  background-color: #fdd835
+
+}
+
+button.navbar-toggle.collapsed {
+  background-color: #ff5252;
+}
+
+.navbar {
+  background-color: #ff5252;
+}
+
+ul.nav.navbar-nav.navbar-right li.active a {
+  color: black;
+  background-color: #fdd835;
+}
+
+
+ul.nav.navbar-nav.navbar-right::before {
+  color: black;
+  background-color: #fdd835;
+}
+
+/* Proper way to have aria, but no changing li or a yet */
+
+.dropdown-menu[aria-labelledby = basic-nav-dropdown] {
+  background-color: #ff5252 !important;
+  color: white;
+}
+
+.ddown li > a {
+  color: white !important;
+  background-color: #ff5252 !important;
+  text-align: left;
+
+}
+
+a#basic-nav-dropdown.dropdown-toggle:focus {
+  color: black;
+  background-color: #fdd835;
+
+}
+
+a#basic-nav-dropdown.button.navbar-toggle {
+  background-color: #ff5252;
+
+}
+
+a#basic-nav-dropdown.button.navbar-toggle.collapsed {
+  background-color: #ff5252;
+
+}
+
+a#basic-nav-dropdown.dropdown-toggle li a {
+  color: white;
+  background-color: #fdd835;
+
+}
+
+a#basic-nav-dropdown.basic-nav-dropdown ul li a {
+  color: white;
+
+}
+
+div.navbar-collapse.collapse.in li.active.a {
+  background-color: #fdd835;
+  text-align: left;
+
+}
+
+.navbar-default .navbar-nav > li > a {
+      color: white;
+      text-align: left;
+
+    }
+
+.App div.navbar-collapse.collapse.in {
+  color: white;
+  text-align: left;
+
+}
+
+.App p {
+  padding-left: 10px;
+}
+
+/* Fix the dropdown a tag state to have the fade color be yellow, learn about pseudo selectors and for the navbar button to hover yellow when navbar is selected */

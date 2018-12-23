@@ -1,0 +1,21 @@
+.ApplicationList .apps {
+  padding-top: 0px;
+  font-family: "Helvetica";
+  font-weight: 600;
+  overflow: hidden;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+
+.ApplicationList h1 {
+  text-align:left;
+}
+
+.page-header h1 {
+  text-align: left;
+  font-size: 24px;
+  padding-top: 0px;
+  padding-left: 10px;
+}

@@ -1,0 +1,23 @@
+.Home .lander {
+  text-align: center;
+  /* padding-top: -20px; */
+}
+.Home{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.Home .lander h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #999;
+}
+
+.dashboard h1 {
+  text-align: left;
+  font-size: 24px;
+  padding-top: 0px;
+
+}
