@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import JobBlock from './JobBlock';
 import Notifications from "../components/Notifications";
-import { PageHeader, Glyphicon, Row, Col } from "react-bootstrap";
+import { PageHeader, Glyphicon, Col } from "react-bootstrap";
 import './JobList.css';
 
 export default class JobList extends Component {
