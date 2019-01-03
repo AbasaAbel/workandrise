@@ -6,7 +6,15 @@ export default class SelectedContacts extends Component {
     super(props);
 
     this.state = {
-      contacts : []
+      contacts : [
+          {
+              FirstName: "Tom",
+              LastName: "Brady",
+              University: "UCSJ",
+              PricePaid: "500,000"
+
+          }
+      ]
     }
   }
     
@@ -41,7 +49,7 @@ export default class SelectedContacts extends Component {
     }
 
     componentDidMount = () => {
-        this.setState({contacts : this.props.location.state.contacts});
+        // this.setState({contacts : this.props.location.state.contacts});
     }
 
     render() {      

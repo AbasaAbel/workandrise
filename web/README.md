@@ -15,7 +15,7 @@ This is the front-end React Web repository for Work & Rise - interested in contr
 # Adding Environment Variables
 
 - Touch .env file into 'front-end' folder root, add the following:
-REACT_APP_PROD_SERVER=http://localhost:3001/api
+REACT_APP_DEV_SERVER=http://localhost:3001/api
 REACT_APP_PROD_SERVER=https://server.workandrise.today/api
 REACT_APP_DEV_CURRENCY=BXC
 REACT_APP_PROD_CURRENCY=UGX
