@@ -325,7 +325,7 @@ export default class Search extends Component{
         array of contacts that a user wants to the purchase.
         */
         handleContactSelection = (user_object, profile_type) => {
-            const selected_contacts = this.state.selected_contacts
+            let selected_contacts = this.state.selected_contacts
             // remove employee if the employee has been selected before
             if (profile_type === "user"){    
                 const attempt_remove = selected_contacts.filter(function(sc){
@@ -378,16 +378,22 @@ export default class Search extends Component{
                     }  
                 </div> 
                 
-                <div style={sel}>
-                    <Link to = {{
-                        pathname: '/selected-contacts',
-                        state: {
-                            contacts : this.state.selected_contacts
-                        }
-                    }}>
-                        <SelectButton selected_contacts={this.state.selected_contacts} />
-                    </Link>
-                </div>
+                {
+                    this.state.selected_contacts.length ?
+                        <div style={sel}>
+                            <Link to = {{
+                                pathname: '/selected-contacts',
+                                state: {
+                                    contacts : this.state.selected_contacts
+                                }
+                            }}>
+                                <SelectButton selected_contacts={this.state.selected_contacts} />
+                            </Link>
+                        </div>
+                        :
+                        false
+                }
+                
                 
                                    
             </div>
