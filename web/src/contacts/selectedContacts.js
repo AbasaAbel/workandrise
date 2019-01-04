@@ -41,7 +41,13 @@ export default class SelectedContacts extends Component {
     }
 
     componentDidMount = () => {
-        this.setState({contacts : this.props.location.state.contacts});
+        //check if the contacts are provided
+        try{
+            this.setState({contacts : this.props.location.state.contacts});
+        }
+        catch(e){
+            this.props.history.replace("/search")
+        }
     }
 
     render() {      
