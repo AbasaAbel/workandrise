@@ -15,7 +15,7 @@ export default class SelectedContacts extends Component {
     graduateId is actually the employeeId
     */
     deleteFromContacts = (graduateId) => {
-        var cleaned_list = this.state.contacts.filter(function(contact){
+        const cleaned_list = this.state.contacts.filter(function(contact){
             return contact.GraduateId !== graduateId;
         });
         this.setState({contacts: cleaned_list});

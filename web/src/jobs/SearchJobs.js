@@ -290,9 +290,9 @@ export default class Search extends Component{
         to the purchase contact sls
         */
         constructPurchaseContact = (user_object, profile_type) => {
-           var object = {}
+           
             if (profile_type === "user"){ // when a user profile is submitted
-                object = {
+                const object = {
                     "EmployerId" : this.props.profile.id,
                     "GraduateId" : user_object.id,
                     "FirstName" : user_object.firstName,
@@ -301,10 +301,11 @@ export default class Search extends Component{
                     "PricePaid" : 0,
                     "Email" : user_object.email,
                     "Phone" : user_object.phone,
-                }            
+                }    
+                return object;     
             }
             else { // when a graduate profile is submitted
-                object = {
+                const object = {
                     "EmployerId" : this.props.profile.id,
                     "GraduateId" : user_object.GraduateId,
                     "FirstName" : user_object.FirstName,
@@ -314,8 +315,9 @@ export default class Search extends Component{
                     "Email" : user_object.Email,
                     "Phone" : user_object.Phone,
                 }
+                return object;
             } 
-            return object;
+            
         }
 
         /*
@@ -323,21 +325,22 @@ export default class Search extends Component{
         array of contacts that a user wants to the purchase.
         */
         handleContactSelection = (user_object, profile_type) => {
-            var selected_contacts = this.state.selected_contacts
-            var attempt_remove = []
+            const selected_contacts = this.state.selected_contacts
             // remove employee if the employee has been selected before
             if (profile_type === "user"){    
-                attempt_remove = selected_contacts.filter(function(sc){
+                const attempt_remove = selected_contacts.filter(function(sc){
                         return sc.GraduateId !== user_object.id;
                     })
+
+                if (attempt_remove.length < selected_contacts.length){
+                    selected_contacts = attempt_remove;
+                }
+                else{
+                    selected_contacts.push(this.constructPurchaseContact(user_object, profile_type));
+                }
             }
 
-            if (attempt_remove.length < selected_contacts.length){
-                selected_contacts = attempt_remove;
-            }
-            else{
-                selected_contacts.push(this.constructPurchaseContact(user_object, profile_type));
-            }
+            
             this.setState({selected_contacts : selected_contacts});
         }
 
