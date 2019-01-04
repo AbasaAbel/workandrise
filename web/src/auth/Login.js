@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FormGroup, FormControl, PageHeader, Row, Col, ControlLabel } from "react-bootstrap";
+import { FormGroup, FormControl, PageHeader, Col, ControlLabel } from "react-bootstrap";
 import {
   CognitoUserPool,
   AuthenticationDetails,
@@ -122,7 +122,7 @@ export default class Login extends Component {
         </form>
         <LoaderButton
           block
-          isLoading={this.state.isLoading}
+          isLoading={false}
           text="Forgot Password?"
           loadingText="Loading.."
           onClick={this.handleForgotPassword}

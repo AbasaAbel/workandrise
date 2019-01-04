@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col, HelpBlock, FormGroup, FormControl, ControlLabel, PageHeader } from "react-bootstrap";
+import { Col, HelpBlock, FormGroup, FormControl, ControlLabel, PageHeader } from "react-bootstrap";
 import LoaderButton from '../components/LoaderButton';
 import {
   AuthenticationDetails,

@@ -28,6 +28,7 @@ import Sandbox2 from './components/Sandbox2';
 import AddReview from './reviews/AddReview';
 import NotFound from './components/NotFound';
 import GraduateProfile from './auth/GraduateRegistration';
+import SelectedContacts  from  './contacts/selectedContacts';
 
 export default ({ childProps }) => (
   <Switch>
@@ -57,6 +58,7 @@ export default ({ childProps }) => (
     <AppliedRoute path="/newsandbox" exact component={Sandbox2} props={childProps} />
     <AppliedRoute path="/graduate-profile" exact component={GraduateProfile} props={childProps} />
     <AppliedRoute path="/search" exact component={Search} props={childProps} />
+    <AppliedRoute path="/selected-contacts" exact component={SelectedContacts} props={childProps} />
     <Route component={NotFound} />
 
   </Switch>
