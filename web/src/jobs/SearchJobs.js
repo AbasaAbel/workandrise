@@ -39,7 +39,7 @@ export default class Search extends Component{
                 catch(exception){return false}
             });
             // set the accordion state here
-            var accordion_state = []
+            let accordion_state = []
 
             //for loop to populate accordion state
             for (var i=0; i < searchedUsers.length; i++) {
